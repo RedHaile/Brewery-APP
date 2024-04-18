@@ -47,4 +47,4 @@ or yarn install
 
 ## Deployment 
 
-- The APP is deployed in Netlify [BreweryApp](https://kaleidoscopic-salamander-1e076b.netlify.app/)
+- The APP is deployed on Netlify [BreweryApp](https://kaleidoscopic-salamander-1e076b.netlify.app/)
