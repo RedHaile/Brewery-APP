@@ -44,3 +44,7 @@ or yarn install
 - Data provided by [Open Brewery DB](https://www.openbrewerydb.org/)
 
 - [Support Integrify](https://www.integrify.io/)
+
+## Deployment 
+
+- The APP is deployed in Netlify [BreweryApp](https://kaleidoscopic-salamander-1e076b.netlify.app/)
