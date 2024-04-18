@@ -1,23 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import Search from './components/search/Search';
-import BreweryList from './components/products/BreweryList';
+import Home from "./pages/Home";
+import BreweryPage from "./pages/BreweryPage";
 
-function App() {
-  return (
+ const router = createBrowserRouter([
+   { path: "/", element: <Home /> }, 
+   { path: "/breweries/:id", element: <BreweryPage /> }, 
+  ]);   
   
-<div className='App'>
-<BreweryList />
-<BreweryList></BreweryList>
-<Search></Search>
-</div>
-  );
-}
-/* const App = () => {
-  return (
-    <div>App</div>
-  )
-} */
+  function App() {
+      return <RouterProvider router={router} />;
+ }
 
-export default App
+
+export default App;

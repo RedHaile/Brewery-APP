@@ -1,8 +1,16 @@
 import React from 'react'
+import { Box, Typography } from '@mui/material';
+import { SearchFieldProps } from '../../misc/type';
+import SearchField from './SearchField';
 
-function Header() {
+
+const Header = ({ onSearch }: SearchFieldProps) => { 
   return (
-    <div>Header</div>
-  )
-}
+     
+   <Box sx={{ display: "flex", alignItems: "center", gap: 4, p: 2 }}>
+          <Typography variant="h4">Breweries App</Typography>
+          <SearchField onSearch={onSearch} />
+       </Box>      
+    );
+  };
 export default Header;
